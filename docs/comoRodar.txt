@@ -2,7 +2,7 @@
 cd src
 
 # Compile todos os módulos e o testbench, salvando o .out na pasta sim
-iverilog -o ../sim/meu_processador_pipeline.out tb/testbench_pipeline.v core/processador_pipeline_modular.v core/reg_if_id.v core/reg_id_ex.v core/reg_ex_mem.v core/reg_mem_wb.v core/stage_if.v core/stage_id.v core/stage_ex.v core/stage_mem.v core/stage_wb.v execution/forwarding_unit.v execution/hazard_detection_unit.v execution/ula.v memory/banco_registradores.v memory/memoria_dados.v memory/memoria_instrucao.v control/unidade_controle.v components/mux2_1.v components/mux3_1.v
+iverilog -o ../sim/meu_processador_pipeline.out tb/testbench_pipeline.v core/processador_pipeline_modular.v core/reg_if_id.v core/reg_id_ex.v core/reg_ex_mem.v core/reg_mem_wb.v core/stage_if.v core/stage_id.v core/stage_ex.v core/stage_mem.v core/stage_wb.v execution/forwarding_unit.v execution/hazard_detection_unit.v execution/ula.v memory/banco_registradores.v memory/memoria_dados.v memory/memoria_instrucao.v components/mux2_1.v components/mux3_1.v control/main_control.v control/alu_control.v
 
 # Execute a simulação
 vvp ../sim/meu_processador_pipeline.out
