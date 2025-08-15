@@ -18,6 +18,7 @@ Repositório do Trabalho Prático 1 da disciplina **CSI509 – Organização e A
 
 ## 📁 Estrutura do Repositório
 
+```plaintext
 .
 ├── docs/             # Documentos de referência e relatório do projeto
 │   ├── comoRodar.txt
@@ -35,6 +36,7 @@ Repositório do Trabalho Prático 1 da disciplina **CSI509 – Organização e A
 ├── waves/            # Arquivos de forma de onda (gerados pela simulação)
 ├── LICENSE           # Licença do repositório
 └── README.md         # Documentação principal do projeto
+```
 ---
 
 ## 🧪 Testbench
