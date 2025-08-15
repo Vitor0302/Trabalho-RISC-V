@@ -1,0 +1,4 @@
+cd Módulos  #entra na pasta de módulos
+iverilog -o meu_processador_pipeline.out testbench_pipeline.v processador_pipeline.v forwarding_unit.v hazard_detection_unit.v unidade_controle.v ula.v banco_registradores.v memoria_dados.v memoria_instrucao.v
+vvp meu_processador_pipeline.out
+gtkwave
