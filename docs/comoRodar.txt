@@ -1,4 +1,11 @@
-cd Módulos  #entra na pasta de módulos
-iverilog -o meu_processador_pipeline.out testbench_pipeline.v processador_pipeline.v forwarding_unit.v hazard_detection_unit.v unidade_controle.v ula.v banco_registradores.v memoria_dados.v memoria_instrucao.v
-vvp meu_processador_pipeline.out
-gtkwave
+# Entre na pasta src
+cd src
+
+# Compile todos os módulos e o testbench, salvando o .out na pasta sim
+iverilog -o ../sim/meu_processador_pipeline.out tb/testbench_pipeline.v core/processador_pipeline.v execution/forwarding_unit.v execution/hazard_detection_unit.v control/unidade_controle.v execution/ula.v memory/banco_registradores.v memory/memoria_dados.v memory/memoria_instrucao.v
+
+# Execute a simulação
+vvp ../sim/meu_processador_pipeline.out
+
+# (Opcional) Abra o waveform gerado para análise visual
+gtkwave ../sim/waveform_pipeline.vcd
