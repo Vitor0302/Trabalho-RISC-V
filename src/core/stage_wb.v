@@ -1,4 +1,8 @@
-// core/stage_wb.v
+/*
+Módulo: stage_wb
+Função: Escreve dados de volta no banco de registradores a partir da memória ou do resultado da ALU.
+*/
+
 module stage_wb (
     // Inputs
     input         mem_wb_memtoreg,
@@ -9,7 +13,6 @@ module stage_wb (
     output [31:0] wb_write_data_to_regfile
 );
 
-    // 'assign wb_write_data_to_regfile = mem_wb_memtoreg ? mem_wb_mem_read_data : mem_wb_alu_result;' FOI SUBSTITUÍDO POR:
     mux2_1 #( .WIDTH(32) ) u_mux_wb (
         .in0(mem_wb_alu_result),
         .in1(mem_wb_mem_read_data),

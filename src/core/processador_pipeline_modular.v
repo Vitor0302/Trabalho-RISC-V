@@ -1,8 +1,8 @@
-// core/processador_pipeline_modular.v
 /*
 Módulo Top-Level do Processador RISC-V com Pipeline Modularizado
 Grupo 12: lh, sh, sub, or, andi, srl, beq
 */
+
 module processador_pipeline_modular(
     input clock,
     input reset

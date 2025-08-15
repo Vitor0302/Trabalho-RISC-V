@@ -1,4 +1,8 @@
-// core/reg_if_id.v
+/*
+Módulo: reg_if_id.v
+Descrição: Registro entre os estágios IF e ID do pipeline.
+*/
+
 module reg_if_id (
     // Inputs
     input         clock,

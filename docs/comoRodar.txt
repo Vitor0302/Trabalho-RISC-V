@@ -1,11 +1,31 @@
-# Entre na pasta src
-cd src
+==========================================
+COMO EXECUTAR O PROCESSADOR PIPELINE RISC-V
+==========================================
 
-# Compile todos os módulos e o testbench, salvando o .out na pasta sim
-iverilog -o ../sim/meu_processador_pipeline.out tb/testbench_pipeline.v core/processador_pipeline_modular.v core/reg_if_id.v core/reg_id_ex.v core/reg_ex_mem.v core/reg_mem_wb.v core/stage_if.v core/stage_id.v core/stage_ex.v core/stage_mem.v core/stage_wb.v execution/forwarding_unit.v execution/hazard_detection_unit.v execution/ula.v memory/banco_registradores.v memory/memoria_dados.v memory/memoria_instrucao.v components/mux2_1.v components/mux3_1.v control/main_control.v control/alu_control.v
+1. Acesse a pasta do projeto:
+    cd src
 
-# Execute a simulação
-vvp ../sim/meu_processador_pipeline.out
+2. Compile todos os módulos e o testbench:
+    iverilog -o ../sim/meu_processador_pipeline.out tb/testbench_pipeline.v core/processador_pipeline_modular.v core/reg_if_id.v core/reg_id_ex.v core/reg_ex_mem.v core/reg_mem_wb.v core/stage_if.v core/stage_id.v core/stage_ex.v core/stage_mem.v core/stage_wb.v execution/forwarding_unit.v execution/hazard_detection_unit.v execution/ula.v memory/banco_registradores.v memory/memoria_dados.v memory/memoria_instrucao.v components/mux2_1.v components/mux3_1.v control/main_control.v control/alu_control.v
 
-# (Opcional) Abra o waveform gerado para análise visual
-gtkwave ../sim/waveform_pipeline.vcd
+3. Execute a simulação:
+    vvp ../sim/meu_processador_pipeline.out
+
+4. (Opcional) Visualize o waveform gerado:
+    gtkwave ../sim/waveform_pipeline.vcd
+
+------------------------------------------
+COMO VISUALIZAR OUTRAS ONDAS (WAVES)
+------------------------------------------
+
+1. Acesse a pasta de ondas:
+    cd waves
+
+2. Abra o arquivo de onda desejado:
+    gtkwave nome_da_onda_gtkw
+
+------------------------------------------
+DICAS
+------------------------------------------
+- Certifique-se de ter o Icarus Verilog (iverilog), vvp e o GTKWave instalados.
+- Substitua "nome_da_onda_gtkw" pelo nome do arquivo de onda que deseja visualizar.

@@ -18,16 +18,23 @@ Repositório do Trabalho Prático 1 da disciplina **CSI509 – Organização e A
 
 ## 📁 Estrutura do Repositório
 
-```plaintext
-├── Módulos/                      # Códigos-fonte em Verilog
-│   ├── alu.v
-│   ├── datapath.v
-│   ├── control.v
-│   └── ...
-├── Documentação/                      # Documentação em LaTeX (formato SBC)
-│   └── relatorio.pdf
-└── README.md
-```
+.
+├── docs/             # Documentos de referência e relatório do projeto
+│   ├── comoRodar.txt
+│   ├── CSI509-Trabalho Prático.pdf
+│   ├── Grupos CSI259-TPs.pdf
+│   └── Relatório.pdf
+├── sim/              # Arquivos de saída da compilação (gerados pelo iverilog)
+├── src/              # Códigos-fonte em Verilog
+│   ├── components/   # Módulos genéricos e reutilizáveis (ex: MUXes)
+│   ├── control/      # Módulos da unidade de controle
+│   ├── core/         # Módulos do pipeline (estágios, registradores e processador)
+│   ├── execution/    # Módulos do estágio de execução (ULA, Forwarding e Hazard Detection)
+│   ├── memory/       # Módulos de memória (banco de registradores, dados, instrução)
+│   └── tb/           # Módulo de Testbench para a simulação
+├── waves/            # Arquivos de forma de onda (gerados pela simulação)
+├── LICENSE           # Licença do repositório
+└── README.md         # Documentação principal do projeto
 ---
 
 ## 🧪 Testbench
@@ -38,9 +45,7 @@ O testbench simula o funcionamento do processador, exibindo no terminal o estado
 
 ## 🔧 Implementação no FPGA
 
-- **Placa:** Mercúrio IV (UFOP)
-- **Clock e Reset:** Conectados a botões/switches da placa
-- **Display de 7 segmentos:** Exibe o Program Counter (PC)
+A ser realizado em uma data posterior.
 
 ---
 
@@ -64,5 +69,5 @@ A documentação está em formato SBC (LaTeX), contendo:
 
 ## ✅ Autores
 
-- [Victor Pureza Cabral]
-- [Otávio Augusto Ferreira]
+- [Victor Pureza Cabral - 21.2.8095]
+- [Otávio Augusto Guimarães Ferreira - 21.2.8074]

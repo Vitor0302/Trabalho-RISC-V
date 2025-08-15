@@ -1,4 +1,8 @@
-// core/reg_id_ex.v
+/*
+Módulo: reg_id_ex.v
+Descrição: Registro entre os estágios ID e EX do pipeline.
+*/
+
 module reg_id_ex (
     // Inputs
     input         clock,

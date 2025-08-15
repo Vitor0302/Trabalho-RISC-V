@@ -1,4 +1,8 @@
-// core/reg_ex_mem.v
+/*
+Módulo: reg_ex_mem.v
+Descrição: Registro entre os estágios EX e MEM do pipeline.
+*/
+
 module reg_ex_mem (
     // Inputs
     input         clock,

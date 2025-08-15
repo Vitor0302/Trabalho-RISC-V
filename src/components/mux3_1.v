@@ -1,5 +1,5 @@
-// src/components/mux3_1.v
 // MUX genérico de 3 para 1
+
 module mux3_1 #(
     parameter WIDTH = 32 // Largura do barramento de dados
 )(

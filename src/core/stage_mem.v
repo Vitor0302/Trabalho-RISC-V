@@ -1,4 +1,8 @@
-// core/stage_mem.v
+/*
+Módulo: stage_mem
+Função: Acessa a memória de dados para operações de leitura e escrita.
+*/
+
 module stage_mem (
     // Inputs
     input         clock,

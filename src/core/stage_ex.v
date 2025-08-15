@@ -1,4 +1,8 @@
-// core/stage_ex.v
+/*
+Módulo: stage_ex
+Função: Executa operações aritméticas e lógicas, calcula endereços de desvio e prepara dados para escrita na memória.
+*/
+
 module stage_ex (
     // Inputs
     input  [31:0] id_ex_pc,

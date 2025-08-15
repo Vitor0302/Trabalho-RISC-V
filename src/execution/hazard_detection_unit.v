@@ -28,7 +28,7 @@ module Hazard_Detection_Unit (
            ( (ID_EX_rd == IF_ID_rs1) || (ID_EX_rd == IF_ID_rs2) ) && // ...e seu destino é uma das fontes da instrução em ID...
            (ID_EX_rd != 5'b0) ) // ...e o destino não é o registrador x0.
         begin
-            // Hazard detectado! Ativa os sinais de stall e bubble.
+            // Hazard detectado -> Ativa os sinais de stall e bubble.
             PC_Stall = 1'b1;
             IF_ID_Stall = 1'b1;
             ID_EX_Bubble = 1'b1;

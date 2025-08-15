@@ -1,0 +1,31 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Fri Aug 15 22:30:10 2025
+[*]
+[dumpfile] "C:\Users\otavi\Desktop\UFOP\8 PERIODO\OAC2\Trabalho-RISC-V\sim\waveform_pipeline.vcd"
+[dumpfile_mtime] "Fri Aug 15 21:32:18 2025"
+[dumpfile_size] 28076
+[savefile] "C:\Users\otavi\Desktop\UFOP\8 PERIODO\OAC2\Trabalho-RISC-V\waves\beq_wave.gtkw"
+[timestart] 0
+[size] 1536 793
+[pos] -1 -1
+*-15.871702 0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench_pipeline.
+[treeopen] testbench_pipeline.DUT.u_stage_id.
+[treeopen] testbench_pipeline.DUT.u_stage_mem.
+[sst_width] 197
+[signals_width] 303
+[sst_expanded] 1
+[sst_vpaned_height] 270
+@28
+testbench_pipeline.DUT.clock
+@22
+testbench_pipeline.DUT.w_if_id_instruction[31:0]
+@28
+testbench_pipeline.DUT.u_stage_id.id_branch
+testbench_pipeline.DUT.w_ex_zero_flag
+testbench_pipeline.DUT.w_branch_taken
+@22
+testbench_pipeline.DUT.w_if_pc[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,4 +1,8 @@
-// core/reg_mem_wb.v
+/*
+Módulo: reg_mem_wb.v
+Descrição: Registro entre os estágios MEM e WB do pipeline.
+*/
+
 module reg_mem_wb (
     // Inputs
     input         clock,

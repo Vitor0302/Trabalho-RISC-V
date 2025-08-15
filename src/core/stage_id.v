@@ -1,4 +1,8 @@
-// core/stage_id.v
+/*
+Módulo: stage_id
+Função: Decodifica instruções, lê dados do banco de registradores e gera sinais de controle para o próximo estágio.
+*/
+
 module stage_id (
     // Inputs
     input         clock,

@@ -1,4 +1,8 @@
-// core/stage_if.v
+/*
+Módulo: stage_if
+Função: Busca instruções na memória de instruções e atualiza o contador de programa (PC).
+*/
+
 module stage_if (
     // Inputs
     input         clock,

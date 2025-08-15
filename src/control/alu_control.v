@@ -1,4 +1,3 @@
-// control/alu_control.v
 /*
 Módulo de Unidade de Controle da ULA
 Este módulo implementa a lógica de controle da ULA, gerando o sinal de controle 
@@ -20,10 +19,10 @@ module Unidade_Controle_ULA (
             2'b11: alu_control_out = ALU_AND; // Comando para AND
             2'b10: begin                      // Comando para decodificar Tipo-R
                 case (funct3)
-                    3'b000: if (funct7 == 7'b0100000) alu_control_out = ALU_SUB; else alu_control_out = ALU_ADD;
-                    3'b110: alu_control_out = ALU_OR;
+                    3'b000: if (funct7 == 7'b0100000) alu_control_out = ALU_SUB; else alu_control_out = ALU_ADD; // ADD ou SUB
+                    3'b110: alu_control_out = ALU_OR;c
                     3'b101: if (funct7 == 7'b0000000) alu_control_out = ALU_SRL; else alu_control_out = 4'hX;
-                    default: alu_control_out = 4'hX;
+                    default: alu_control_out = 4'hX; 
                 endcase
             end
             default: alu_control_out = 4'hX;

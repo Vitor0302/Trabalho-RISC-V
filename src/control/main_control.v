@@ -1,4 +1,3 @@
-// control/main_control.v
 /*
 Módulo de Unidade de Controle Principal
 Este módulo implementa a lógica de controle principal do processador, gerando sinais 
